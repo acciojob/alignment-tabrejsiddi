@@ -1,16 +1,124 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>HTML Assignment 3</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .middle {
+            border: 1px solid black;
+            border-spacing: 1px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .middle td {
+            border: 1px solid black;
+            padding: 1px;
+            height: 20px;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        .green {
+            background-color: green;
+            height: 25px !important;
+        }
+        .blue {
+            background-color: blue;
+            height: 25px !important;
+        }
+        #t-image {
+            text-align: center;
+        }
+        #t-image img {
+            width: 250px;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <h1>HTML Assignment #3</h1>
+
+    <!-- Table 1 -->
+    <table id="table-1" class="middle">
+        <tr>
+            <td id="t11">left</td>
+            <td id="t12" class="center">center</td>
+            <td id="t13" class="right">right</td>
+        </tr>
+        <tr>
+            <td>left</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
+        </tr>
+        <tr>
+            <td>left</td>
+            <td class="center">center</td>
+            <td class="right">right</td>
+        </tr>
+    </table>
+
+    <!-- Table 2 -->
+    <table id="table-2" class="middle">
+        <tr>
+            <td id="t21" colspan="6"></td>
+        </tr>
+        <tr>
+            <td rowspan="4"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3" rowspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- Table 3 -->
+    <table id="table-3" class="middle">
+        <tr class="green">
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td style="width: 33%;"></td>
+            <td id="t-image" style="width: 34%;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Steph_Curry_%2851915116957%29.jpg" alt="Michael Jordan" onerror="this.src='https://via.placeholder.com/250x150?text=Jordan+Dunk'">
+            </td>
+            <td style="width: 33%;"></td>
+        </tr>
+        <tr class="blue">
+            <td colspan="3"></td>
+        </tr>
+    </table>
 
 </body>
-
 </html>
